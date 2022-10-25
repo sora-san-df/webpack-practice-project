@@ -8,6 +8,7 @@ const Dotenv = require('dotenv-webpack');
 
 
 module.exports = {
+    
     entry: './src/index.js',
     output:{
         path: path.resolve(__dirname,'dist'),
@@ -15,6 +16,7 @@ module.exports = {
         assetModuleFilename: 'assets/images/[hash][ext][query]',
         clean: true 
     },
+    mode: "production",
     resolve:{
         extensions: ['.js'],
         alias: {
